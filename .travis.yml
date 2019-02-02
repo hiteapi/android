@@ -1,4 +1,6 @@
 language: android
 before_install:
     - yes | sdkmanager "platforms;android-28"
-
+sudo: false
+script:
+    - ./gradlew build check
